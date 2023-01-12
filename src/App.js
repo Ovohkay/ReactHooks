@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import  Login  from './Componenets/Login';
+import  Home  from './Componenets/Home';
+import Xender from './Componenets/Xender';
+import  Assignments from './Componenets/Assignments';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Reducer from './Componenets/Reducer';
+import {useRoutes} from "react-router-dom"
+
+const App = () => {
+  // let element = useRoutes([
+  //   {
+  //     path: "/",
+  //     element: <Login/>
+  //   },
+  //   {
+  //     path: "/home",
+  //     element: <Home/>
+  //   }
+  // ])
+  // return <Xender/>
+    // <Reducer/>
+
+    return < Assignments/>
+  
 }
 
-export default App;
+export  default App
